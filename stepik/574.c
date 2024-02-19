@@ -7,10 +7,9 @@ P. S. В консоль ничего выводить не нужно.*/
 
 int main(void)
 {
-    char str[100];
-    strcpy(str, "Best string!");
+    char str[100] =  "Best string!";
 
-   for (int i=0; i<sizeof(str);i++)
+   for (int i=0; i<strlen(str);i++)
    {
        if (str[i] == '!')
            str[i] = '.';
